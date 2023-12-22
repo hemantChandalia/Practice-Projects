@@ -110,6 +110,7 @@ function showQuestion() {
 
 function resetState() {
     // nextButton.style.display = "none";
+    plyButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -129,8 +130,60 @@ function selectAnswer(e) {
         }
         button.disabled = true;
     });
+    // var selectAnswer = localStorage.getItem("selectedBtn");
     // nextButton.style.display = "block";
+
+// function saveSelectedText() {
+//     let selectedText = 'selectedBtn';
+
+//     if (window.getSelection) {
+//       selectedText = window.getSelection().toString();
+//     } else if (document.selection && document.selection.type !== 'Control') {
+//       selectedText = document.selection.createRange().text;
+//     }
+
+//     // Do something with the selected text, like displaying it or storing it
+//     console.log('Selected Text:', selectedText);
+
+//     // You can also store it in a variable or use it in any other way
+//     // For example, to store it in a variable:
+//     // savedText = selectedText;
+//   }
+
+
+/* {<select id="mySelect">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+  <option value="option4">Option 4</option>
+</select>
+<button onclick="saveSelectedOption()">Save Selected Option</button> */}
+
+function saveSelectedButton() {
+    // Get the <select> element
+    var selectElement = document.getElementById('answer-buttons');
+
+    // Get the selected option
+    var selectedButton = selectElement.button[selectElement.selectedIndex];
+
+    // Get the value and text of the selected option
+    var selectedValue = selectedButton.value;
+    var selectedText = selectedButton.text;
+
+    // You can do something with the selected value or text, such as storing it
+    console.log('Selected Value:', selectedValue);
+    console.log('Selected Text:', selectedText);
+
+    // You can store the selected value in a variable or use it as needed
+    // For example, to store it in a variable:
+    // savedOption = selectedValue;
 }
+
+
+// document.addEventListener('mouseup', function() {
+//     saveSelectedText();
+//   });
+
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
