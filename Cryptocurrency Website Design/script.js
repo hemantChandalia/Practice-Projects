@@ -1,3 +1,10 @@
+// adding the graph
+// adding the video
+// make website like coindesk
+
+
+
+
 var btc__ = document.getElementById("bitcoin");
 var eth__ = document.getElementById("ethereum");
 var doge__ = document.getElementById("dogecoin");
