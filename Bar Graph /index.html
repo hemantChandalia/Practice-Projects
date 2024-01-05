@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Bitcoin Price Graph</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="bitcoinChart" width="800" height="400"></canvas>
+
+  <script>
+    // Function to fetch Bitcoin price data
+    async function fetchBitcoinData() {
+      try {
+        const response = await fetch('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7');
+        const data = await response.json();
+        return data.prices;
+      } catch (error) {
+        console.error('Error fetching Bitcoin data:', error);
+        return null;
+      }
+    }
+
+    // Function to format timestamps to human-readable dates
+    function formatTime(timestamp) {
+      return new Date(timestamp).toLocaleTimeString();
+    }
+
+    // Function to create a live graph
+    async function createLiveGraph() {
+      const bitcoinData = await fetchBitcoinData();
+
+      if (!bitcoinData) {
+        // Handle error if data fetching fails
+        return;
+      }
+
+      const timestamps = bitcoinData.map(entry => formatTime(entry[0]));
+      const prices = bitcoinData.map(entry => entry[1]);
+
+      const bitcoinChart = new Chart(document.getElementById('bitcoinChart'), {
+        type: 'line',
+        data: {
+          labels: timestamps,
+          datasets: [{
+            label: 'Bitcoin Price (USD)',
+            data: prices,
+            borderColor: 'blue',
+            backgroundColor: 'rgba(0, 123, 255, 0.1)',
+            borderWidth: 1,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              ticks: {
+                autoSkip: true,
+                maxTicksLimit: 10
+              }
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Price (USD)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Call the function to create the live graph
+    createLiveGraph();
+  </script>
+</body>
+</html>
