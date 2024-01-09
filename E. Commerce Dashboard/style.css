@@ -332,16 +332,19 @@ main .insights svg circle {
 main .insights .sales svg circle {
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
+    stroke-linecap: round;
 }
 
 main .insights .expenses svg circle {
-    stroke-dashoffset: 20;
-    stroke-dasharray: 80;
+    stroke-dashoffset: 10;
+    stroke-dasharray: 82;
+    stroke-linecap: round;
 }
 
 main .insights .income svg circle {
     stroke-dashoffset: 35;
     stroke-dasharray: 110;
+    stroke-linecap: round;
 }
 
 main .insights .progress .number {
@@ -569,11 +572,11 @@ main .recent-orders a{
     }
 
     main .recent-orders{
-        width: 94%;
-        position: absolute;
-        left: 50%;
+        width: 90%;
+        position: relative;
+        left: 45%;
         transform: translateX(-50%);
-        margin: 2rem 0 0 0.8rem;
+        margin: 1rem 0 0 0.8rem;
     }
 
     main .recent-orders table{
@@ -693,3 +696,44 @@ main .recent-orders a{
         font-size: 2rem;
     }
 }
+/* ============Media Queries for inbetween========= */
+
+/* @media screen and (min-width:769px) {
+    container{
+        width: 
+    };
+    
+}
+
+@media screen and (max-width: 769px) {
+    
+} */
+
+/* @media screen and (min-width:785px) {
+    main .recent-orders table{
+        width: 46vw;
+
+    }
+    
+}
+
+@media screen and (max-width:1199px) {
+    main .recent-orders table{
+        width: 83vw;
+
+    }
+    
+} */
+
+
+/* For screens between 600px and 900px */
+/* @media only screen and (min-device-width: 769px) and (max-device-width: 1199px) { */
+    /* Styles for medium-sized screens */
+    /* Example styles */
+    /* main .recent-orders table{
+        width: 70vw;
+
+    }
+    
+    
+  } */
