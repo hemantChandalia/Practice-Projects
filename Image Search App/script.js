@@ -5,7 +5,7 @@
 // random photos at home page
 //  more photos at home page instead of 3
 // adding better css
-// header >> images keep repating like Pexel
+// header >> images keep repeating like Pexel
 // navbar
 // search button attractivness
 // make website like Pexel and Yandex

@@ -325,11 +325,12 @@ footer {
     margin-bottom: 2px;
 }
 
-social-icons:hover{
-    background: var(--blue);
-}
+/* .social-icons:hover{
+    background: red;
+    border-radius: 50%;
+} */
 .social-icons{
-    color: #c22b2b;
+    color:#fff  ;
     /* border: size 1dvi; */
     grid-area: social-icons;
     gap: 50px   ;
@@ -351,12 +352,30 @@ social-icons:hover{
     
 }
 
-i:hover{
-    border-radius: 25%;
+i.fa-facebook:hover{
+    /* border-radius: 50%; */
+    /* color: white; */
+    color: #316FF6;
     /* grid-template-column:0fr 0fr 0fr 0fr; */
-    background:var(--cyan);
+    /* background:var(--cyan); */
     display: inline-block;
+    background: white;
+    border-radius: 50%;
     /* display:-ms-inline-grid; */
+}
+
+i.fa-twitter:hover{
+    color:#1DA1F2;
+}
+/* i.fa-instagram{
+    background: white;
+} */
+i.fa-instagram:hover{
+    /* color: var(--footer-bg); */
+    /* background: #d6249f; */
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    line-height: 0.85;
+    border-radius: 35%;
 }
 
 /* i.fa {
