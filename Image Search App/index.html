@@ -1,45 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Search App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  
 
-<body>
-    <h1>Image Search App</h1>
+  <body>
+    <!-- nav bar======================= -->
+    
+    <div class="imageApp">
+      <div class="navbar">
 
-    <form action="">
-        <input type="text" id="search-input" placeholder="Search for images">
-        <button id="search-button">Search</button>
-    </form>
 
-    <div class="search-results">
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1682687220975-7b2df674d3ce?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Mountains in desert">
-            <a href="https://unsplash.com/photos/a-person-standing-in-the-middle-of-a-desert-wSJmlKMecHU"
-                target="_blank" id="anchorcolor">Mountains in desert</a>
+        <a onclick="openInNewTab('#home')">Home</a>
+        <a onclick="openInNewTab('#about')">About</a>
+        <a onclick="openInNewTab('#services')">Services</a>
+        <a onclick="openInNewTab('#contact')">Contact</a>
+        <a onclick="openInNewTab('#contact')">Sign Up</a>
+        <a onclick="openInNewTab('#contact')">Login</a>
+        <!-- <ul class="navbar-right"> -->
+        </ul>
+        <div class="nav-right">
+        <div class="toggleBtn">
+          <span id="lightMode" class="material-symbols-outlined">
+            light_mode
+          </span>
+          <!-- <span
+            id="toggleOff"
+            class="material-symbols-outlined"
+            onclick="lightModeToggle()"
+          >
+            toggle_off
+          </span> -->
+          <span
+            id="toggle-handle"
+            class="material-symbols-outlined"
+            onclick="toggleTheme()"
+          >
+            toggle_on
+          </span>
+          <span id="darkMode" class="material-symbols-outlined">
+            dark_mode
+          </span>
         </div>
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1682687220975-7b2df674d3ce?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Mountains in desert">
-            <a href="https://unsplash.com/photos/a-person-standing-in-the-middle-of-a-desert-wSJmlKMecHU"
-                target="_blank" id="anchorcolor">Mountains in desert</a>
-        </div>
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1682687220975-7b2df674d3ce?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Mountains in desert">
-            <a href="https://unsplash.com/photos/a-person-standing-in-the-middle-of-a-desert-wSJmlKMecHU"
-                target="_blank" id="anchorcolor">Mountains in desert</a>
+        <div class="nav-login">
+            <a onclick="openInNewTab('#contact')">Sign Up</a>
+            <a href="./Login.html" target="_blank">Login</a>
+         
+        
         </div>
     </div>
+        <!-- <button onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
+      </div>
 
-    <button id="show-more-button">Show more</button>
+      <h1 style="padding-top: 100px;">Image Search App</h1>
+
+      <form action="">
+        <input type="text" id="search-input" placeholder="Search for images" />
+        <button id="search-button">Search</button>
+      </form>
+
+      <div class="search-results">
+        <div class="search-result">
+          <img
+            src="https://images.unsplash.com/photo-1682687220975-7b2df674d3ce?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Mountains in desert"
+          />
+          <a
+            href="https://unsplash.com/photos/a-person-standing-in-the-middle-of-a-desert-wSJmlKMecHU"
+            target="_blank"
+            id="anchorcolor"
+            >Mountains in desert</a
+          >
+        </div>
+      </div>
+
+      <button id="show-more-button">Show more</button>
+
+      <!-- navbar content=================== -->
+      <section id="home" style="background-color: #f0f0f0">
+        <header>
+          <h1>Image Search App</h1>
+
+          <p>Find the perfect images with ease!</p>
+        </header>
+
+        <section>
+          <h2>Discover a World of Images</h2>
+          <p>
+            Explore a vast collection of high-quality images using our advanced
+            image search app. Whether you're looking for stunning visuals,
+            creative inspiration, or specific content, our app has you covered.
+          </p>
+        </section>
+
+        <section>
+          <h2>Key Features</h2>
+          <ul>
+            <li>
+              <strong>Efficient Search:</strong> Quickly find images using our
+              powerful search algorithm.
+            </li>
+            <li>
+              <strong>Filter Options:</strong> Refine your search with filters
+              such as size, color, and type.
+            </li>
+            <li>
+              <strong>Save Favorites:</strong> Create collections and save your
+              favorite images for easy access.
+            </li>
+            <li>
+              <strong>Share with Ease:</strong> Share images directly from the
+              app to social media or download them for personal use.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How It Works</h2>
+          <p>
+            Using our image search app is simple and intuitive. Just enter your
+            search query, apply filters if needed, and browse through the
+            results. Click on an image to view it in full detail, and use the
+            available options to save or share your discoveries.
+          </p>
+        </section>
+
+        <section>
+          <h2>Get Started Today</h2>
+          <p>
+            Experience the world of images like never before. Start using our
+            image search app now to find the perfect visuals for your projects,
+            presentations, or personal enjoyment.
+          </p>
+          <p><a href="#">Download the App</a></p>
+        </section>
+      </section>
+
+      <section id="about" style="background-color: #e0e0e0">
+        <header>
+          <h1>About Us</h1>
+          <p>
+            Learn more about the team and mission behind the Image Search App.
+          </p>
+        </header>
+
+        <section>
+          <h2>Our Mission</h2>
+          <p>
+            At Image Search App, our mission is to provide a seamless and
+            powerful platform for users to discover and explore a world of
+            high-quality images. We aim to make the image search experience
+            efficient, enjoyable, and accessible to everyone.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Image Search App?</h2>
+          <p>
+            With the vast amount of visual content available online, finding the
+            right images can be a challenge. Image Search App is designed to
+            address this challenge by offering a feature-rich search experience,
+            advanced filtering options, and a user-friendly interface. We
+            believe in the power of visuals to enhance communication,
+            creativity, and storytelling.
+          </p>
+        </section>
+
+        <section>
+          <h2>Meet the Team</h2>
+          <p>
+            Our dedicated team of developers, designers, and visionaries is
+            passionate about creating innovative solutions for image search. We
+            bring together a diverse set of skills and backgrounds to ensure
+            that Image Search App meets the needs of a wide range of users.
+          </p>
+          <p>
+            Feel free to connect with us and share your feedback. We are
+            committed to continuous improvement and providing the best possible
+            experience for our users.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions, suggestions, or just want to say hello,
+            we'd love to hear from you! Reach out to us at
+            <a href="mailto:info@imagesearchapp.com">info@imagesearchapp.com</a
+            >.
+          </p>
+        </section>
+      </section>
+
+      <section id="services" style="background-color: #d0d0d0">
+        <p>Services Section Content</p>
+      </section>
+
+      <section id="contact" style="background-color: #c0c0c0">
+        <header>
+          <h1>Contact Us</h1>
+          <p>
+            Have questions, feedback, or suggestions? We'd love to hear from
+            you!
+          </p>
+        </header>
+
+        <section>
+          <h2>Get in Touch</h2>
+          <p>
+            Feel free to reach out to us with any inquiries. Whether you have a
+            question about using the app, want to report an issue, or have
+            suggestions for improvement, we're here to assist you.
+          </p>
+          <p>
+            You can contact us via email at
+            <a href="mailto:info@imagesearchapp.com">info@imagesearchapp.com</a
+            >.
+          </p>
+        </section>
+
+        <section>
+          <h2>Feedback and Suggestions</h2>
+          <p>
+            We value your feedback and are always looking for ways to enhance
+            the Image Search App. If you have suggestions, ideas, or feature
+            requests, please let us know. Your input helps us improve and create
+            a better experience for our users.
+          </p>
+          <p>
+            Send your feedback to
+            <a href="mailto:feedback@imagesearchapp.com"
+              >feedback@imagesearchapp.com</a
+            >.
+          </p>
+        </section>
+
+        <section>
+          <h2>Connect on Social Media</h2>
+          <p>
+            Stay updated and engage with us on social media platforms. Follow us
+            on
+            <a
+              href="https://twitter.com/imagesearchapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >,
+            <a
+              href="https://www.facebook.com/imagesearchapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >, and
+            <a
+              href="https://www.instagram.com/imagesearchapp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            for the latest news, tips, and announcements.
+          </p>
+        </section>
+
+        <section>
+          <h2>Visit Our Headquarters</h2>
+          <p>
+            If you're in the area, feel free to visit our headquarters. We'd
+            love to meet you in person!
+          </p>
+          <address>
+            Image Search App<br />
+            123 Tech Avenue<br />
+            Techcity, New Delhi 110076<br />
+            India
+          </address>
+        </section>
+      </section>
+
+      
+
+     </section>
+    </div>
+</div>
+
+    </div>
+
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
