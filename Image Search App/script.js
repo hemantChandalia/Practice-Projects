@@ -10,6 +10,8 @@
 // navbar
 // search button attractivness
 // make website like Pexel and Yandex
+// add signup and login pages
+// add navbar with functionality
 
 const accessKey = "4CW4fmD5UhhB1SumLRtm9zLfdUamebyFKmFf12uZq0U";
 
@@ -193,26 +195,3 @@ function toggleTheme() {
   }
 }
 
-// ==============test=============
-
-// function darkModeToggle() {
-//   const imageSearch = document.getElementById("imageApp");
-//   console.log("toggle >>> darkModeToggle");
-//   document.getElementById("toggleOn").innerHTML = "toggle_on";
-//   imageSearch.requestFullscreen().catch((err) => {
-//     console.error(
-//       `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
-//     );
-//   });
-// }
-// function lightModeToggle() {
-//   const imageSearch = document.getElementById("imageApp");
-//   console.log("toggle >>> lightModeToggle");
-
-//   document.getElementById("toggleOff").innerHTML = "toggle_off";
-//   imageSearch.requestFullscreen().catch((err) => {
-//     console.error(
-//       `Error attempting to enable full-screen mode: ${err.message} (${err.name})`
-//     );
-//   });
-// }
