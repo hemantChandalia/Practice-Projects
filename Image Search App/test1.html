@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        /* background-color: #1a0cde; */
+        /* overflow: hidden; */
+        display: flex;
+        flex-wrap: wrap;
+        background: blue;
+        overflow: hidden;
+        /* overflow: unset; */
+      }
+
+      .navbar a {
+        float: left;
+        /* display: block; */
+        display: flex;
+        color: rgb(221, 24, 24);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #dae845;
+        color: black;
+      }
+
+      /* @media screen and (max-width: 600px) {
+        .navbar a {
+          float: none;
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      } */
+      .navAndImg {
+        width: 100%;
+
+      }
+      img {
+
+        width: 100%;
+        height: calc(100%-100%);
+      }
+      .image-container {
+        height: 50%;
+        /* max-width: 100%; */
+        /* width: 100%; */
+        /* height: auto; */
+        /* margin: 20px 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navAndImg">
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="image-container">
+        <img
+          src="./desktop wallpaper/wallpaperflare.com_wallpaper.jpg"
+          alt="Responsive Image"
+        />
+      </div>
+    </div>
+    <!-- Add your content here -->
+  </body>
+</html>

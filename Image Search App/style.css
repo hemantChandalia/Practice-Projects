@@ -19,7 +19,6 @@ body {
   color: #fff; /* Light text color */
 }
 
-
 /* Navbar styles */
 .navbar {
   position: fixed;
@@ -97,7 +96,7 @@ body.dark-theme {
   cursor: pointer;
 }
 /* login form style ============================*/
-.loginBody{
+.loginBody {
   background-color: #f4f4f4;
   border: black solid;
   margin: 0;
@@ -105,23 +104,26 @@ body.dark-theme {
   width: 100vw;
   height: 100vh;
 }
-.formBox{
-    display: flex;
-    justify-content: center;
-    /* align-items: end; */
+.formBox {
+  display: flex;
+  justify-content: center;
+  /* align-items: end; */
+}
+
+.searchForm {
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  position: relative;
+
+  transform: translate(-50%, -3%);
 }
 
 form {
-  background-color: #cd2121;
-  padding: 20px;
-  border: rgb(60, 19, 193) solid;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-  width: 25vw;
+  background-color: green;
+  padding: 1px;
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
-
 }
 
 label {
@@ -131,9 +133,10 @@ label {
 
 input {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  font-size: 20px;
 }
 
 .loginBtn {
@@ -177,18 +180,6 @@ h1 {
   margin: 20px 0 25px 0;
 }
 
-
-#search-input {
-  width: 60%;
-  max-width: 400px;
-  padding: 10px 20px;
-  border: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  font-size: 18px;
-  border-radius: 15px;
-  color: #333;
-}
-
 /* .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
@@ -226,11 +217,11 @@ h1 {
   background-color: green;
   color: #fff;
   border: none;
-  font-size: 18px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+
   cursor: pointer;
-  border-radius: 15px;
-  margin-left: 10px;
+
+  border-radius: 0px 15px 15px 0px;
 }
 
 .search-results {

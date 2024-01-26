@@ -9,9 +9,36 @@ body {
     background: #db3159;
 }
 
+ /* Dark Theme Styles */
+ /* body.dark-theme {
+    background: #333;
+    color: #835252;
+} */
+
+.dark-theme > .container {
+    background: black !important;
+    color: #ffff;
+}
+
+
+#toggle-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#toggle-button:hover{
+    background-color: #e21010;
+}
+
 .container {
     width: 400px;
-    padding: 25px 35px;
+    
+    align-items: center;
+    padding-bottom: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,13 +47,63 @@ body {
     border-radius: 10px;
 
 }
+.navMenu{
+    width: 400px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+
+nav {
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-color: #444; */
+    /* background-color: #494eea; */
+    background-color: #1e23ae;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+nav a {
+    color: #e21010;
+    text-decoration: none;
+    padding: 9px;
+    margin: 0 5px;
+    /* border-top-left-radius: 10px; */
+}
+
+nav a:hover {
+   
+    background-color: #0b0b67
+
+}
+.btn{
+    background: bisque;
+    border: black solid;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
 
 .container p {
     font-weight: 800px;
     font-size: 20px;
     margin-bottom: 8px;
+    padding-left: 35px;
 }
+.inputBox{
+    padding: 0px 35px;
 
+
+}
 .container input {
     width: 100%;
     height: 50px;
@@ -37,10 +114,16 @@ body {
     font-size: 18px;
     font-weight: 200;
 }
+.generateBtn{
+        padding: 0px 35px;
+
+}
 
 .container button {
     width: 100%;
     height: 50px;
+    /* padding: 0px 35px; */
+    
     background: #1e23ae;
     color: #fff;
     border: 0;
@@ -52,67 +135,6 @@ body {
     font-size: 18px;
     font-weight: 500;
 }
-
-/* 
-.container button, glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.container button, glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.container button, glow-on-hover:active {
-    color: #000
-}
-
-.container button, glow-on-hover:active:after {
-    background: transparent;
-}
-
-.container button, glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.container button, glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-} */
 
 /* button hover */
 .container button:hover {
@@ -190,3 +212,17 @@ body {
     width: 30px;
     margin: auto;
 }
+
+@media only screen and (max-width: 412px) {
+    /* Adjust styles for screens with a width of 600 pixels or less */
+    .container {
+        width: 100%; /* Make the box 80% width on smaller screens */
+    }
+}
+
+/* Add your styles for light theme here */
+.light-theme {
+    /* Light theme styles */
+    background-color: aqua;
+}
+
