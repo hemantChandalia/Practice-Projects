@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="light-mode">
     <div class="container">
         <div class="top">
             <aside>
@@ -241,14 +241,34 @@
                 <button id="menu-btn">
                     <span class="material-symbols-sharp">menu</span>
                 </button>
+              
                 <div class="theme-toggler">
-                    <span class="material-symbols-sharp active">
+                      
+                    <button id="lightModeToggle" class="material-symbols-sharp active > light-mode">
                         light_mode
-                    </span>
-                    <span class="material-symbols-sharp">
+                    </button> 
+              
+                    
+                    <button id="darkModeToggle" class="material-symbols-sharp">
                         dark_mode
-                    </span>
+                    </button>
+                
+                
                 </div>
+
+<!-- ================================= -->
+                <!-- <div>
+                <span>
+                <button id="lightModeToggle" class="material-symbols-outlined">
+                    light_mode
+                    </button>
+                    <button id="darkModeToggle" class="material-symbols-outlined">
+                    dark_mode
+                    </button>
+
+                </span>
+            </div> -->
+
                 <div class="profile">
                     <div class="info">
                         <p>Hey, <b>Hemant</b></p>
@@ -260,6 +280,8 @@
                 </div>
 
             </div>
+<!-- end of toggler theme ================= -->
+
 
             <!------------End of Top----------->
             <div class="recent-updates">
