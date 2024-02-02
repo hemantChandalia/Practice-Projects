@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./oilPainting.jpeg);
+    /* background-color: #7cf9e5; */
+}
+
+.section{
+    min-height: 100vh;
+    padding: 30px;
+}
+/* .bgImg{
+    width: 100%;
+} */
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(30, 71, 4);
+    border-width: 1px;
+    background-color: #ffbf00ba;
+    width: fit-content;
+    color: rgb(30, 71, 4);
+    text-align: center;
+}
+.puzzle{
+    max-width: 700px;
+    margin: auto;
+}
+
+.puzzle_item {
+    border: 1px solid rgb(30, 71, 4);
+    padding: 20px;
+    background-color: #ffbf00ba;
+
+
+}
+
+.puzzle_title{
+    display: flex;
+    align-items: center;
+
+}
+.puzzle_title h3{
+    flex:1;
+    font-size: 25px;
+}
+
+.puzzle_title i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.puzzle_content{
+    display: none;
+}
+
+.puzzle_title.active + .puzzle_content{
+    display: block;
+    padding-top: 20px;
+}
+
+.puzzle_content p {
+    font-size: 20px;
+    color: black;
+}
+
+.puzzle_title.active i{
+    transform: rotate(180deg);
+}
+      
