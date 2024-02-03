@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.random-color-generator-container{
+    display: flex;
+    gap: 10px;
+}
+/* .random-hex-color, .rgb-choice-color{
+    font-size: medium;
+    display: block;
+
+    justify-content: center;
+    align-items: center;
+} */
+.hex-color-container, .rgb-color-container{
+    /* min-width: 50vw; */
+    min-height: 100vh;
+    flex: 2;
+}
+
+.hex-color-container button{
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(246, 246, 17);
+}
+
+.rgb-color-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(246, 64, 4);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rgb-color-container button{
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(246, 246, 17);
+    color: #030000;
+}
+/* .red{
+    color: #fff;
+} */
+.hex-color-container{
+    /* width: 100%; */
+    background-color: green;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-color-value, .rgb-color-value{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+
+}
